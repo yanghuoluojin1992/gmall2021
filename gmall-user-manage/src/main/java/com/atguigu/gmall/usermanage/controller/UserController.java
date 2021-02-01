@@ -23,6 +23,7 @@ public class UserController {
 
     @RequestMapping("findAllList")
     public List<UserInfo> findAllList(){
+        System.out.println("云端修改");
         return userService.findAll();
     }
 }
