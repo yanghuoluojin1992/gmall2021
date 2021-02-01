@@ -20,4 +20,9 @@ public class UserController {
     public List<UserInfo> getAll(){
         return userService.findAll();
     }
+
+    @RequestMapping("findAllList")
+    public List<UserInfo> findAllList(){
+        return userService.findAll();
+    }
 }
