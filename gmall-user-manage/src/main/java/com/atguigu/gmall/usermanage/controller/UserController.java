@@ -18,12 +18,13 @@ public class UserController {
 
     @RequestMapping("findAll")
     public List<UserInfo> getAll(){
-        System.out.println("云端修改");
+        
         return userService.findAll();
     }
 
     @RequestMapping("findAllList")
     public List<UserInfo> findAllList(){
+        System.out.println("云端修改");
         System.out.println("云端修改");
         System.out.println("云端修改");
         return userService.findAll();
